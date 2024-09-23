@@ -14,7 +14,7 @@ def test_api():
     return jsonify({'message': 'Hello from Flask!'})
 
 if __name__ == '__main__':
-    # Retrieve the port number from the environment variable or default to 5000
-    port = int(os.environ.get('PORT', 5000))
+    # Retrieve the port number from the environment variable or default to 80
+    port = int(os.environ.get('PORT', 80))
     # Run the application on all available interfaces
     app.run(host='0.0.0.0', port=port)
